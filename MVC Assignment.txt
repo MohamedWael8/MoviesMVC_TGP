@@ -1,0 +1,66 @@
+Please provide a descriobtion for each one of the below terms with some examples
+	- URI? and what is the component of URI
+	- URI reference
+	- Abolute URI
+	- Abolute path
+	- Empty path
+	- Base URI
+
+Give a base URI 'http://tgp.com/trainings/courses?name=en' and the below relative references, could you please provide what will be the result of merging the base uri wih each one of these realtive references
+
+	  "./math"        
+      	  "math/"          
+      	  "/math"           
+          "//tgp-math"          
+      	  "?name=math"         
+      	  "subject?math"     
+ 	  "."             
+          "./"           
+          ".."          
+          "../"          
+          "../rooms"     
+	  "../../../../topic"
+	  "/../math"
+	  "..math"
+	  "math.."
+
+Please provide 5 other example of schme other than http, https
+
+
+For each one of the below headers, please provide the following details
+	a- Descriptoin for the header and one to use it with some examples
+	b- Is it mandatory
+	c- Is it http request header or http response
+
+	Accept-Charset
+	Accept-Encoding
+	Accept-Language
+	Accept-Range
+	Content-Encoding
+	Content-Language
+	Content-Length
+	Content-Type
+
+
+What is the difference between 401 and 403 status codes and when should i use each one of them
+
+
+-----------------------------------
+\\sco\Learning with Mosh\The Complete ASP.NET MVC 5 Course
+
+Given the the a Movie model that has the following attributes [Id, Name, MainActor, ReleaseDate, WebSite, CountryId], CountryId should be one of ids coming form another model 'Country'
+	Please create mvc app using ASP.NET MVC tha contain the below functionalities
+		-Movies Listing 
+		-Create Movie
+		-Update Movie
+		-Delete Movie
+
+	In Create and Update pages please use dropdownlist to select a Country
+
+
+		
+
+	
+
+
+

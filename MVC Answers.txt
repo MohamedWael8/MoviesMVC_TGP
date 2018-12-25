@@ -1,0 +1,62 @@
+Please provide a description and an example for each of the following terms:
+
+	- URI? and what is the component of URI
+
+URI--
+A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.
+
+URI Components--
+foo://example.com:8042/over/there?name=ferret#nose
+         \_/   \______________/\_________/ \_________/ \__/
+          |           |            |            |        |
+       scheme     authority       path        query   fragment
+          |   _____________________|__
+         / \ /                        \
+         urn:example:animal:ferret:nose
+
+
+	- URI Reference
+URI-reference is used to denote the most common usage of a resource identifier.
+URI / relative-ref
+relative-ref  = relative-part [ "?" query ] [ "#" fragment ]
+relative-part = "//" authority path-abempty
+                 / path-absolute
+                 / path-noscheme
+                 / path-empty
+
+	- Absolute URI
+The absolute form of a URI without a fragment identifier.
+Absolute-URI  = scheme ":" hier-part [ "?" query ]
+hier-part   = "//" authority path-abempty
+                  / path-absolute
+                  / path-rootless
+                  / path-empty
+
+	- Absolute Path
+A relative reference that begins with a single slash character.
+Path-absolute = "/" [ segment-nz *( "/" segment ) ]
+
+	- Empty path
+path-empty    = 0<pchar>
+If the base URI has a defined authority component and an empty path, then return a string consisting of "/" concatenated with the reference's path
+
+	- Base URI
+A base URI must be established by the parser prior to parsing URI references that might be relative.  A base URI must conform to the <absolute-URI> syntax rule
+
+Give a base URI 'http://tgp.com/trainings/courses?name=en' and the below relative references, could you please provide what will be the result of merging the base uri wih each one of these realtive references
+
+	  "./math"        
+      	  "math/"          
+      	  "/math"           
+          "//tgp-math"          
+      	  "?name=math"         
+      	  "subject?math"     
+ 	  "."             
+          "./"           
+          ".."          
+          "../"          
+          "../rooms"     
+	  "../../../../topic"
+	  "/../math"
+	  "..math"
+	  "math.."

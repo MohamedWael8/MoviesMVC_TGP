@@ -13,6 +13,11 @@ namespace TGP.MVC.Movies.Controllers
             return View();
         }
 
+        public ActionResult Movie()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

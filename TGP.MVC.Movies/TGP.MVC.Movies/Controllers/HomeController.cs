@@ -13,7 +13,7 @@ namespace TGP.MVC.Movies.Controllers
             return View();
         }
 
-        public ActionResult Movie()
+        public ActionResult AddMovie()
         {
             return View();
         }
